@@ -1,0 +1,52 @@
+.nested-main{
+    display:flex;
+}
+.nested-main a{
+    color: rgb(222, 255, 253);
+    text-decoration: none;
+    
+    font-weight: normal;
+}
+.nested-main a:hover{
+    color: rgb(4, 235, 4);
+    
+}
+.nested-main p{
+    border-bottom:1px solid rgb(4, 219, 4);
+    padding: 3px 5px;
+    
+}
+.quastion{
+    height: 100vh;
+    /* border: 1px solid white; */
+    overflow: auto;
+    scrollbar-width: none;
+    width: 33%;
+}
+.answer{
+    height: 100vh;
+    /* border: 1px solid white; */
+    overflow: auto;
+    scrollbar-width: none;
+}
+.developer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+
+}
+@media screen and (max-width:750px){
+    .nested-main{
+        flex-direction: column;
+    }
+    .quastion{
+        display: flex;
+        width: 100%;
+        overflow: scroll;
+        height: 33px;
+    }
+    .quastion p{
+        width: 130px;
+    }
+}
